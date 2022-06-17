@@ -1,0 +1,183 @@
+/*Aplikacja Webowa autorstwa Mateusza Szmyta*/
+
+:root {
+  --light: #33cc33;
+  --dark: #ff0066;
+}
+
+header {
+background:#FFFFFF;
+width: auto;	
+}
+
+
+@font-face {
+    font-family: 'BreeSerif-Regular';
+    src: url("/static/font/BreeSerif-Regular.ttf");
+}
+
+body {
+	height:100%;
+	background: linear-gradient(0deg, #d4d4d4 70%, #f5f5f5 85%) no-repeat fixed;
+	/*font-family: 'Comfortaa', cursive;*/
+	font-family:'BreeSerif-Regular';
+	font-size: 16px;
+	user-select: none;
+	margin: 0px;
+	transition: filter .4s ease;
+}
+
+footer {
+text-align:center;
+position:relative;
+bottom:50%;
+}
+
+.button {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--light);
+  width: 300px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+}
+
+.button:hover {
+  background-image: linear-gradient(
+    145deg,
+    transparent 10%,
+    var(--dark) 10% 20%,
+    transparent 20% 30%,
+    var(--dark) 30% 40%,
+    transparent 40% 50%,
+    var(--dark) 50% 60%,
+    transparent 60% 70%,
+    var(--dark) 70% 80%,
+    transparent 80% 90%,
+    var(--dark) 90% 100%
+  );
+  animation: background 5s linear infinite;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.rozp{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--light);
+  width: 400px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+}
+
+
+.rozp:hover {
+  background-image: linear-gradient(
+    145deg,
+    transparent 10%,
+    var(--dark) 10% 20%,
+    transparent 20% 30%,
+    var(--dark) 30% 40%,
+    transparent 40% 50%,
+    var(--dark) 50% 60%,
+    transparent 60% 70%,
+    var(--dark) 70% 80%,
+    transparent 80% 90%,
+    var(--dark) 90% 100%
+  );
+  animation: background 5s linear infinite;
+  
+ table, th, td {
+  border:1px solid black;
+}
+}
+
+::-webkit-scrollbar { 
+width: 1.5vh;
+background-color: #483f18;
+}/*cały pasek*/
+
+::-webkit-scrollbar-thumb {
+background-color: #80764c; 
+} /*pasek przewijania*/
+
+.sign_container {
+	margin: 40px auto;
+	width: 70%;
+	 /*Od tej wartości zależy pozycja stopki*/
+	height: auto;
+	min-height:500px;
+	position: relative;
+}
+
+
+.form_box { /*Here left*/
+	text-align:center;
+	width:100%;
+	min-height: 500px;
+	height: auto;
+	background-color: #6991b8;
+	box-shadow: -20px 0px 20px 10px rgba(0, 0, 0, .4);
+	position: relative;
+}
+
+.info_box {
+	text-align:center;
+	width: 75%;height: 50px;
+	margin-left: 12.5%;
+	background-color: #40a2b3;
+	box-shadow: 0px 0px 20px 10px rgba(27, 183, 255, .4);
+}
+
+.register_box {
+	text-align:center;
+	padding-top:6.5vh;
+}
+
+.quiz_container {
+	background-color:red;
+	margin: 40px auto;
+	width: 50%;
+	height: auto 500px;	
+	position: relative;
+	box-shadow: 0px 0px 10px 10px rgba(255, 0, 0, .4);
+}
+
+.quiz_field {
+	background-color:gold;
+	height: auto;
+	
+	/*margin-left:12.5%;*/
+}
+
+
+.menu_button {
+background: none;
+color: white;
+border: none;
+font: inherit;
+cursor: pointer;
+}
+
